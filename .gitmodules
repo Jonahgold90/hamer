@@ -2,3 +2,6 @@
 	path = third-party/ViTPose
 	url = https://github.com/ViTAE-Transformer/ViTPose.git
 	branch = main
+[submodule "third-party/xtcocoapi"]
+	path = third-party/xtcocoapi
+	url = https://github.com/jin-s13/xtcocoapi.git
