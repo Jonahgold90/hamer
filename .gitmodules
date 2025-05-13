@@ -4,4 +4,4 @@
 	branch = main
 [submodule "third-party/xtcocoapi"]
 	path = third-party/xtcocoapi
-	url = https://github.com/jin-s13/xtcocoapi.git
+	url = https://github.com/mhyatt000/xtcocoapi
