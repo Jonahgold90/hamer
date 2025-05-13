@@ -34,6 +34,28 @@ bash fetch_demo_data.sh
 
 Besides these files, you also need to download the MANO model. Please visit the [MANO website](https://mano.is.tue.mpg.de) and register to get access to the downloads section.  We only require the right hand model. You need to put `MANO_RIGHT.pkl` under the `_DATA/data/mano` folder.
 
+## Server
+
+to use HaMeR as `webpolicy` server:
+```bash
+uv run server/server.py --help
+
+╭─ options ─────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ -h, --help              show this help message and exit                                                           │
+│ --port INT              Port to run the server on (default: 8002)                                                 │
+│ --host STR              Host to run the server on (default: 0.0.0.0)                                              │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+╭─ policy options ──────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ --policy.fast, --policy.no-fast                                                                                   │
+│                         If set, use fast mode for inference, disable viz (default: True)                          │
+│ --policy.every-det INT  every n frames to run non-hamer detectors (default: 5)                                    │
+│ --policy.every-pose INT                                                                                           │
+│                         every n frames to run non-hamer detectors (default: 2)                                    │
+...
+...
+...
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+```
 ### Docker Compose
 
 If you wish to use HaMeR with Docker, you can use the following command:
