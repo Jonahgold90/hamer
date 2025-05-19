@@ -37,6 +37,7 @@ dependencies = [
     "pyrootutils[all]>=1.0.4",
     "rich[all]>=14.0.0",
     "xtcocotools",
+    "tyro>=0.9.20",
 ]
 
 [project.optional-dependencies]
