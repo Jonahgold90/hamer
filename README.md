@@ -24,7 +24,8 @@ cd hamer
 
 We use `uv` for virtual environment:
 ```bash
-uv sync --extra server
+uv sync
+uv sync --extra server --extra build --no-build-isolation
 ```
 
 You also need to download the trained models:
